@@ -2,6 +2,7 @@ package com.juaracoding.pages;
 
 import com.juaracoding.drivers.DriverSingleton;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -67,6 +68,32 @@ public class ManagementUserPage {
     @FindBy(xpath = "//div[@id='__next']/div/div[2]/div/div/div/div/div/div[3]/div/div/p[2]")
     private WebElement dataCount;
 
+    @FindBy(xpath = "//div[@id='mui-2']")
+    private WebElement rowPerPageButton;
+
+    @FindBy(xpath = "//ul[@id='mui-1']/li[3]")
+    private WebElement numRowPerPage;
+
+    @FindBy(xpath = "//*[@id=\"alert-dialog-title\"]")
+    private WebElement titleTambah;
+
+    //Edit ManagementPage Unit
+    @FindBy(xpath = "//*[@id=\"__next\"]/div/div[2]/div/div[1]/div/div/div/div[2]/div/table/tbody/tr[1]/td[4]/div/div/button")
+    private WebElement kebabButton;
+
+    @FindBy(xpath = "//div[@id='card-actions-menu']/div[3]/ul/li")
+    private WebElement editButton;
+
+    @FindBy(xpath = "(//button[@type='submit'])[2]")
+    private WebElement simpanButton;
+
+    @FindBy(xpath = "//div[2]/button[2]")
+    private WebElement batalEditButton;
+
+    @FindBy(xpath = "//h6[normalize-space()='ABB Compe']")
+    private WebElement editData;
+
+
     //ManagementPage Button
     public void setManagementButton(){
         managementButton.click();
@@ -105,8 +132,23 @@ public class ManagementUserPage {
         return defaultDepartment.getText();
     }
 
+    public void setRowPerPage(){
+        rowPerPageButton.click();
+    }
+
+    public void setNumRowPerPage(){
+        numRowPerPage.click();
+    }
+
+    public String getDataCount(){
+        DriverSingleton.delay(3);
+        return dataCount.getText();
+    }
+
+
     //ManagementPage Tambahkan Unit
     public void setTambahkanButton(){
+        DriverSingleton.delay(3);
         tambahkanButton.click();
     }
 
@@ -114,19 +156,55 @@ public class ManagementUserPage {
         namaDepartmentInput.sendKeys(tambahkan);
     }
 
+    public String getTambahkanInput(){
+        return namaDepartmentInput.getAttribute("required");
+    }
+
     public void setTambahButton(){
+        DriverSingleton.delay(3);
         tambahButton.click();
     }
 
     public void setBatalButton(){
+        DriverSingleton.delay(3);
         batalButton.click();
-    }
-
-    public String getDataCount(){
-        return dataCount.getText();
     }
 
     public String setTxtNamaDepartment(){
         return txtNamaDepartment.getText();
     }
+
+    public String getTitle(){
+        DriverSingleton.delay(3);
+        return titleTambah.getText();
+    }
+
+    //Edit management Unit
+    public void setKebabButton(){
+        DriverSingleton.delay(3);
+        kebabButton.click();
+    }
+
+    public void setEditButton(){
+        editButton.click();
+    }
+
+    public void setSimpanButton(){
+        simpanButton.click();
+    }
+
+    public void setBatalEditButton(){
+        batalEditButton.click();
+    }
+
+    public void inputEdit(String namaDepartmentInput){
+        this.namaDepartmentInput.sendKeys(Keys.CONTROL+"a"+Keys.DELETE);
+        this.namaDepartmentInput.sendKeys(namaDepartmentInput);
+    }
+
+    public String getEditData(){
+        DriverSingleton.delay(3);
+        return editData.getText();
+    }
+
 }
