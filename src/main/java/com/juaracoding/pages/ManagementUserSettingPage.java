@@ -64,7 +64,7 @@ public class ManagementUserSettingPage {
     @FindBy(xpath = "//tbody/tr[1]/td[5]/button[1]//*[name()='svg']")
     private WebElement deleteButton;
 
-    @FindBy(xpath = "(//button[@type='button'])[19]")
+    @FindBy(xpath = "/html/body/div[3]/div[3]/div/form/div/div[2]/button[2]")
     private WebElement tidakButton;
 
     @FindBy(xpath = "//button[@type='submit']")
@@ -145,10 +145,12 @@ public class ManagementUserSettingPage {
     }
 
     public void setTidakButton(){
+        DriverSingleton.delay(3);
         tidakButton.click();
     }
 
     public void setYaButton(){
+        DriverSingleton.delay(3);
         yaButton.click();
     }
 }

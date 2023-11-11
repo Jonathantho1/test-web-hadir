@@ -1,17 +1,17 @@
 package com.juaracoding.pages;
 
 import com.juaracoding.drivers.DriverSingleton;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.concurrent.TimeUnit;
+
 public class ManagementUserPage {
 
     private WebDriver driver;
-    private JavascriptExecutor js;
 
     public ManagementUserPage(){
         this.driver = DriverSingleton.getDriver();
@@ -96,7 +96,9 @@ public class ManagementUserPage {
 
     //ManagementPage Button
     public void setManagementButton(){
+        DriverSingleton.delay(5);
         managementButton.click();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
     //ManagementPage Menu Unit

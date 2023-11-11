@@ -30,31 +30,31 @@ Feature: Management Unit Setting
     Then Tidak ada penambahan data pada unit setting
 
   #TCC.HW.015
-  Scenario: Matikan Selfie
+  Scenario: Matikan Selfie Unit Setting
     Given Klik button selfie
     When Keluar pop up message
     Then Klik ok
 
   #TCC.HW.016
-  Scenario: Hidupkan Selfie
+  Scenario: Hidupkan Selfie Unit Setting
     Given Klik button selfie
     When Keluar pop up message
     Then Klik ok
 
   #TCC.HW.017
-  Scenario: Tidak Delete Data
+  Scenario: Tidak Delete Data Unit Setting
     Given Klik delete
     When Klik tidak
     Then  Data masih ada pada unit setting
 
   #TCC.HW.018
-  Scenario: Delete Data
+  Scenario: Delete Data Unit Setting
     Given Klik delete
     When  Klik ya
     Then Data terhapus
 
   #TCC.HW.019
-  Scenario: Valid Row per Page
+  Scenario: Valid Row per Page Unit Setting
     Given Klik row per page unit setting
     When Klik angka row per page unit setting
     Then Size page berkurang

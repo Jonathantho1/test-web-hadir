@@ -1,6 +1,6 @@
 Feature: Management Unit
   # TCC.HW.001
-  Scenario: Valid Input dan Search
+  Scenario: Valid Input dan Search Unit
     Given Klik management button
     When Klik unit button
     And Input nama department pada search
@@ -10,12 +10,12 @@ Feature: Management Unit
     Then Menampilkan tanggal update
 
   # TCC.HW.002
-  Scenario: Valid Reset
+  Scenario: Valid Reset Unit
     Given Klik reset
     Then Balik ke tampilan default
 
   # TCC.HW.003
-  Scenario: Valid Rows per Page
+  Scenario: Valid Rows per Page Unit
     Given Klik row per page
     When Klik angka row per page
     Then Size page bertambah
@@ -41,7 +41,7 @@ Feature: Management Unit
     Then Mendapatkan alert
 
   #TCC.HW.007
-  Scenario: Input Nama Departement yang Sudah Ada
+  Scenario: Input Nama Departement yang Sudah Ada Unit
     Given Input nama department yang sudah ada dalam database
     When Klik tambah
     Then Tetap dalam tampilan Tambah Departements
