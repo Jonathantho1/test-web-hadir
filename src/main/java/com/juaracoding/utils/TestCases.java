@@ -12,7 +12,16 @@ public enum TestCases {
     T8("Input Nama Departement yang Sudah Ada"),
     T9("Valid Edit Data Unit/Department"),
     T10("Batal Edit data Unit/Department"),
-    T11("Tidak input update Unit/Department");
+    T11("Tidak input update Unit/Department"),
+    T12("Valid Tambah Unit Setting"),
+    T13("Tidak Memilih Department Tambah Unit Setting"),
+    T14("Memilih Department yang ada di Unit Setting"),
+    T15("Batal Valid Department Tambah Unit Setting"),
+    T16("Matikan Selfie"),
+    T17("Hidupkan Selfie"),
+    T18("Tidak Delete Data"),
+    T19(" Delete Data"),
+    T20("Valid Row per Page");
 
     private String testCaseName;
 

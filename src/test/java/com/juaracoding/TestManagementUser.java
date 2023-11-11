@@ -1,10 +1,8 @@
 package com.juaracoding;
 
-import com.juaracoding.drivers.DriverSingleton;
 import com.juaracoding.pages.ManagementUserPage;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-import io.cucumber.java.bs.A;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

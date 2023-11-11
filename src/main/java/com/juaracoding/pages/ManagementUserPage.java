@@ -195,6 +195,7 @@ public class ManagementUserPage {
 
     public void setBatalEditButton(){
         batalEditButton.click();
+        DriverSingleton.delay(3);
     }
 
     public void inputEdit(String namaDepartmentInput){
@@ -203,7 +204,6 @@ public class ManagementUserPage {
     }
 
     public String getEditData(){
-        DriverSingleton.delay(3);
         return editData.getText();
     }
 
