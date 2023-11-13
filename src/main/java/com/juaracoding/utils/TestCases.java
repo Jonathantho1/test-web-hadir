@@ -32,8 +32,22 @@ public enum TestCases {
     T28("Valid Button Batal Posisi"),
     T29("Valid Edit Button Posisi"),
     T30("invalid Edit Button Posisi"),
-    T31("Valid Edit button Batal Posisi");
-
+    T31("Valid Edit button Batal Posisi"),
+    T32("Valid Tambahkan Client Upliner"),
+    T33("Invalid No Input Tambahkan"),
+    T34("Invalid Email Format"),
+    T35("Invalid No Input Password"),
+    T36("Invalid Input Password Less Than 8 Characters"),
+    T37("Invalid No Input Unit"),
+    T38("Invalid Tambahkan Used Email"),
+    T39("Valid Edit Client Upliner Edit"),
+    T40("Invalid Edit Client Upliner No Data"),
+    T41("Invalid Edit Client Upliner No Email And Unit"),
+    T42("Invalid Edit Client Upliner Invalid Email Format And No Unit"),
+    T43("Invalid Edit Client Upliner No Unit"),
+    T44("Invalid Edit Client Upliner Used Email"),
+    T45("Valid Menu data Client Upliner"),
+    T46("Valid Row per Page Client Upliner");
     private String testCaseName;
 
     TestCases(String value){

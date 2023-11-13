@@ -64,8 +64,8 @@ public class TestManagementUserSetting {
     @Then("Data berhasil ditambahkan ke unit setting")
     public void data_berhasil_ditambahkan_unit_setting(){
         Assert.assertEquals(managementUserSettingPage.getNamaDepartment(),"ABC Compe");
-        Assert.assertEquals(managementUserSettingPage.getTanggalBuat(),"11 Nov 2023");
-        Assert.assertEquals(managementUserSettingPage.getTanggalUpdate(),"11 Nov 2023");
+        Assert.assertEquals(managementUserSettingPage.getTanggalBuat(),"13 Nov 2023");
+        Assert.assertEquals(managementUserSettingPage.getTanggalUpdate(),"13 Nov 2023");
         extentTest.log(LogStatus.PASS,"Data berhasil ditambahkan ke unit setting");
     }
 

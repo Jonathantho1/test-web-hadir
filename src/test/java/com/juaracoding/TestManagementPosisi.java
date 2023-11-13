@@ -46,8 +46,8 @@ public class TestManagementPosisi {
     @Then("Mendapatkan data input")
     public void mendapatkan_data_input(){
         Assert.assertEquals(managementPosisiPage.getNamaDivisi(),"ABC HRD");
-        Assert.assertEquals(managementPosisiPage.getTanggalBuat(),"03 Nov 2023");
-        Assert.assertEquals(managementPosisiPage.getTanggalUpdate(),"11 Nov 2023");
+        Assert.assertEquals(managementPosisiPage.getTanggalBuat(),"13 Nov 2023");
+        Assert.assertEquals(managementPosisiPage.getTanggalUpdate(),"13 Nov 2023");
         extentTest.log(LogStatus.PASS,"Klik search posisi");
     }
 
