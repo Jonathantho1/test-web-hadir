@@ -174,7 +174,7 @@ public class TestManagementClientUpliner {
 
     @And("Upload foto client upliner")
     public void upload_foto(){
-        managementClientUplinerPage.setInputPathImage("C:\\Users\\Jonathan\\Pictures\\Screenshots");
+        managementClientUplinerPage.setInputPathImage("C:\\Users\\Jonathan\\Pictures\\Screenshots\\loginEmpty.png");
         extentTest.log(LogStatus.PASS,"Upload foto client upliner");
     }
 
