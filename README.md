@@ -4,7 +4,4 @@
 
 **Note: Only change some part that told to change on this noted for the website and the program. Other than that do not change it.**
 
-Extend report result after running the automation program.
-![alt text]()
-
 
