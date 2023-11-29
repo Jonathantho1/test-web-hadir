@@ -8,10 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.concurrent.TimeUnit;
 
-public class ManagementUserSettingPage {
+public class ManagementUnitSettingPage {
     private WebDriver driver;
 
-    public ManagementUserSettingPage(){
+    public ManagementUnitSettingPage(){
         this.driver = DriverSingleton.getDriver();
         PageFactory.initElements(driver,this);
     }

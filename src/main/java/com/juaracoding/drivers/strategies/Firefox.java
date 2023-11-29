@@ -7,7 +7,7 @@ public class Firefox implements DriverStrategy {
 
     @Override
     public WebDriver setStrategy() {
-        System.setProperty("webdriver.gecko.driver"," 'path ke webdriver firefox' ");
+        System.setProperty("webdriver.gecko.driver"," 'path to webdriver firefox' ");
         WebDriver driver = new FirefoxDriver();
 
         return driver;

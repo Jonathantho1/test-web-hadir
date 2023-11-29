@@ -53,7 +53,7 @@ public class ManagementClientUplinerPage {
     @FindBy(xpath = "//tbody/tr[1]/td[5]/h6[1]")
     private WebElement tipeUplinerMenu;
 
-    @FindBy(xpath = "//h6[normalize-space()='13 Nov 2023']")
+    @FindBy(xpath = "//h6[normalize-space()='29 Nov 2023']")
     private WebElement tanggalDiBuat;
 
     @FindBy(xpath = "//div[@id='mui-3']")

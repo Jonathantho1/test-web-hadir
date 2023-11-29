@@ -9,11 +9,11 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.concurrent.TimeUnit;
 
-public class ManagementUserPage {
+public class ManagementUnitPage {
 
     private WebDriver driver;
 
-    public ManagementUserPage(){
+    public ManagementUnitPage(){
         this.driver = DriverSingleton.getDriver();
         PageFactory.initElements(driver,this);
     }

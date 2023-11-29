@@ -1,7 +1,7 @@
 package com.juaracoding;
 
 import com.juaracoding.pages.ManagementClientUplinerPage;
-import com.juaracoding.pages.ManagementUserPage;
+import com.juaracoding.pages.ManagementUnitPage;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import io.cucumber.java.en.And;
@@ -15,7 +15,7 @@ public class TestManagementClientUpliner {
 
     private static WebDriver driver;
     private static ManagementClientUplinerPage managementClientUplinerPage = new ManagementClientUplinerPage();
-    private static ManagementUserPage managementUserPage = new ManagementUserPage();
+    private static ManagementUnitPage managementUserPage = new ManagementUnitPage();
     private static ExtentTest extentTest;
 
     public TestManagementClientUpliner(){
@@ -89,7 +89,7 @@ public class TestManagementClientUpliner {
         Assert.assertEquals(managementClientUplinerPage.getNama(),"John Doe");
         Assert.assertEquals(managementClientUplinerPage.getEmail(),"JohnDoe@yahoo.com");
         Assert.assertEquals(managementClientUplinerPage.getUnit(),"ABC Compe");
-        Assert.assertEquals(managementClientUplinerPage.getTanggalDiBuat(),"13 Nov 2023");
+        Assert.assertEquals(managementClientUplinerPage.getTanggalDiBuat(),"29 Nov 2023");
         extentTest.log(LogStatus.PASS,"Data client upliner terbuat");
     }
 
